@@ -210,47 +210,97 @@ class _screen3State extends State<screen3> {
                               ),
                             ),
                           ),
-                          Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Padding(
-                                padding: EdgeInsets.only(left: 30.w, top: 12.h),
-                                child: Container(
-                                  width: 136.w,
-                                  height: 89.h,
-                                  decoration: ShapeDecoration(
-                                    shape: RoundedRectangleBorder(
-                                      side: BorderSide(
-                                          width: 0.50.w,
-                                          color: Color(0xFFE7E7E7)),
-                                      borderRadius: BorderRadius.circular(16.r),
+                          SingleChildScrollView(scrollDirection: Axis.horizontal,
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsets.only(left: 30.w, top: 12.h),
+                                  child: Container(
+                                    width: 136.w,
+                                    height: 89.h,
+                                    decoration: ShapeDecoration(
+                                      shape: RoundedRectangleBorder(
+                                        side: BorderSide(
+                                            width: 0.50.w,
+                                            color: Color(0xFFE7E7E7)),
+                                        borderRadius: BorderRadius.circular(16.r),
+                                      ),
+                                    ),
+                                    child: Padding(
+                                      padding: EdgeInsets.only(
+                                          top: 14.h, left: 16.w),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment
+                                            .start,
+                                        children: [
+                                          Container(
+                                            height: 27.h,
+                                            width: 29.w,
+                                            child: Image.asset("assets/18.png"),
+                                          ),
+                                          Text(
+                                            'Diesel',
+                                            style: TextStyle(
+                                              color: Color(0xFF292D32),
+                                              fontSize: 14.sp,
+                                              fontFamily: 'Barlow',
+                                              fontWeight: FontWeight.w700,
+                                            ),
+                                          ),
+                                          SizedBox(
+                                            width: 105.w,
+                                            child: Text(
+                                              'Common Rail Fuel Injection',
+                                              style: TextStyle(
+                                                color: Color(0xFF898A8D),
+                                                fontSize: 8.sp,
+                                                fontFamily: 'Open Sans',
+                                                fontWeight: FontWeight.w400,
+                                              ),
+                                            ),
+                                          )
+                                        ],
+                                      ),
                                     ),
                                   ),
-                                  child: Padding(
-                                    padding: EdgeInsets.only(
-                                        top: 14.h, left: 16.w),
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment
-                                          .start,
-                                      children: [
-                                        Container(
-                                          height: 27.h,
-                                          width: 29.w,
-                                          child: Image.asset("assets/18.png"),
-                                        ),
-                                        Text(
-                                          'Diesel',
-                                          style: TextStyle(
-                                            color: Color(0xFF292D32),
-                                            fontSize: 14.sp,
-                                            fontFamily: 'Barlow',
-                                            fontWeight: FontWeight.w700,
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.only(left: 30.w, top: 12.h),
+                                  child: Container(
+                                    width: 136.w,
+                                    height: 89.h,
+                                    decoration: ShapeDecoration(
+                                      shape: RoundedRectangleBorder(
+                                        side: BorderSide(
+                                            width: 0.50.w,
+                                            color: Color(0xFFE7E7E7)),
+                                        borderRadius: BorderRadius.circular(16.r),
+                                      ),
+                                    ),
+                                    child: Padding(
+                                      padding: EdgeInsets.only(
+                                          top: 14.h, left: 16.w),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment
+                                            .start,
+                                        children: [
+                                          Container(
+                                            height: 27.h,
+                                            width: 29.w,
+                                            child: Image.asset("assets/19.png"),
                                           ),
-                                        ),
-                                        SizedBox(
-                                          width: 105.w,
-                                          child: Text(
-                                            'Common Rail Fuel Injection',
+                                          Text(
+                                            'Acceleration',
+                                            style: TextStyle(
+                                              color: Color(0xFF292D32),
+                                              fontSize: 14.sp,
+                                              fontFamily: 'Barlow',
+                                              fontWeight: FontWeight.w700,
+                                            ),
+                                          ),
+                                          Text(
+                                            '0 - 100km / 11s',
                                             style: TextStyle(
                                               color: Color(0xFF898A8D),
                                               fontSize: 8.sp,
@@ -258,107 +308,60 @@ class _screen3State extends State<screen3> {
                                               fontWeight: FontWeight.w400,
                                             ),
                                           ),
-                                        )
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.only(left: 30.w, top: 12.h),
-                                child: Container(
-                                  width: 136.w,
-                                  height: 89.h,
-                                  decoration: ShapeDecoration(
-                                    shape: RoundedRectangleBorder(
-                                      side: BorderSide(
-                                          width: 0.50.w,
-                                          color: Color(0xFFE7E7E7)),
-                                      borderRadius: BorderRadius.circular(16.r),
-                                    ),
-                                  ),
-                                  child: Padding(
-                                    padding: EdgeInsets.only(
-                                        top: 14.h, left: 16.w),
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment
-                                          .start,
-                                      children: [
-                                        Container(
-                                          height: 27.h,
-                                          width: 29.w,
-                                          child: Image.asset("assets/19.png"),
-                                        ),
-                                        Text(
-                                          'Acceleration',
-                                          style: TextStyle(
-                                            color: Color(0xFF292D32),
-                                            fontSize: 14.sp,
-                                            fontFamily: 'Barlow',
-                                            fontWeight: FontWeight.w700,
-                                          ),
-                                        ),
-                                        Text(
-                                          '0 - 100km / 11s',
-                                          style: TextStyle(
-                                            color: Color(0xFF898A8D),
-                                            fontSize: 8.sp,
-                                            fontFamily: 'Open Sans',
-                                            fontWeight: FontWeight.w400,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(left: 30.w, top: 12.h),
-                            child: Container(
-                              width: 136.w,
-                              height: 89.h,
-                              decoration: ShapeDecoration(
-                                shape: RoundedRectangleBorder(
-                                  side: BorderSide(
-                                      width: 0.50.w, color: Color(0xFFE7E7E7)),
-                                  borderRadius: BorderRadius.circular(16.r),
-                                ),
-                              ),
-                              child: Padding(
-                                padding: EdgeInsets.only(top: 14.h, left: 16.w),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      height: 27.h,
-                                      width: 29.w,
-                                      child: Image.asset("assets/20.png"),
-                                    ),
-                                    Text(
-                                      'Cool Seat',
-                                      style: TextStyle(
-                                        color: Color(0xFF292D32),
-                                        fontSize: 14.sp,
-                                        fontFamily: 'Barlow',
-                                        fontWeight: FontWeight.w700,
+                                        ],
                                       ),
                                     ),
-                                    Text(
-                                      '0 - 100km / 11s',
-                                      style: TextStyle(
-                                        color: Color(0xFF898A8D),
-                                        fontSize: 8.sp,
-                                        fontFamily: 'Cool Seat',
-                                        fontWeight: FontWeight.w400,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.only(left: 30.w, top: 12.h),
+                                  child: Container(
+                                    width: 136.w,
+                                    height: 89.h,
+                                    decoration: ShapeDecoration(
+                                      shape: RoundedRectangleBorder(
+                                        side: BorderSide(
+                                            width: 0.50.w, color: Color(0xFFE7E7E7)),
+                                        borderRadius: BorderRadius.circular(16.r),
                                       ),
                                     ),
-                                  ],
+                                    child: Padding(
+                                      padding: EdgeInsets.only(top: 14.h, left: 16.w),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Container(
+                                            height: 27.h,
+                                            width: 29.w,
+                                            child: Image.asset("assets/20.png"),
+                                          ),
+                                          Text(
+                                            'Cool Seat',
+                                            style: TextStyle(
+                                              color: Color(0xFF292D32),
+                                              fontSize: 14.sp,
+                                              fontFamily: 'Barlow',
+                                              fontWeight: FontWeight.w700,
+                                            ),
+                                          ),
+                                          Text(
+                                            '0 - 100km / 11s',
+                                            style: TextStyle(
+                                              color: Color(0xFF898A8D),
+                                              fontSize: 8.sp,
+                                              fontFamily: 'Cool Seat',
+                                              fontWeight: FontWeight.w400,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
                                 ),
-                              ),
+                              ],
                             ),
                           ),
+
                           Padding(
                             padding: EdgeInsets.only(top: 20.h, left: 30.w),
                             child: Row(
